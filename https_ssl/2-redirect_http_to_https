@@ -34,8 +34,8 @@ defaults
 	errorfile 504 /etc/haproxy/errors/504.http
 backend my_servers
         balance roundrobin
-        server 5428-web-02 54.163.19.42:80 check
-        server 5428-web-01 54.87.18.145:80 check
+        server 5734-web-02 3.90.102.206:80 check
+        server 5734-web-01 54.146.227.95:80 check
 frontend haproxy_inbound
         bind *:80
 		bind *:443 ssl crt /etc/haproxy/ssl-certs/cert.pem
